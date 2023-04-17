@@ -1,0 +1,6 @@
+title: Jekyll Tailwind Boilerplate Project
+description: a starter project for getting up and running with Jekyll using Tailwind CSS
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
