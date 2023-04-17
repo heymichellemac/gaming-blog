@@ -1,8 +1,14 @@
 {% include header.html %}
 
-<div class="container mx-auto px-4 py-4">
+<div class="px-4 md:container py-12">
+  <h1 class="text-3xl md:text-4xl tracking-wide font-bold mb-12 text-white">
+    {{ page.title }}
+  </h1>
+  <div
+    class="prose prose-lg prose-invert max-w-none hover:prose-a:text-cyan-500 prose-a:transition-all prose-a:underline-offset-2"
+  >
     {{ content }}
+  </div>
 </div>
-
 
 {% include footer.html %}

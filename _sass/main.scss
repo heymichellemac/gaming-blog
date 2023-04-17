@@ -1,4 +1,14 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+img + em {
+  display: block;
+  font-size: smaller;
+  font-style: normal;
+  text-align: center;
+}
+
+.prose img {
+  margin-bottom: 8px;
+}

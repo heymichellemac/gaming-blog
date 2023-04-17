@@ -1,0 +1,18 @@
+---
+layout: default
+title: Tag - PS5
+---
+
+<article>
+    {% for post in site.tags.PS5 %}
+        {% assign currentdate = post.date | date: "%Y" %}
+        {% if currentdate != date %}
+            <h2 class="text-2xl md:text-3xl tracking-wide font-semibold mt-8 mb-4" id="y{{post.date | date: "%Y"}}">{{ currentdate }}</h2>
+            {% assign date = currentdate %}
+        {% endif %}
+        <a href="{{ post.url }}" style="text-decoration:none;" class=" group flex flex-wrap md:flex-nowrap items-center gap-x-6 justify-between px-4 py-3 rounded-md ">
+            <p class="group-hover:decoration-cyan-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-4 flex-1 text-lg font-semibold text-white">{{ post.title }}</p>
+            <p class="text-base text-slate-400 text-center block">{{ post.date | date: "%d %b %y" }}</p>
+        </a>
+    {% endfor %}
+</article>

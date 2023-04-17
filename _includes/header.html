@@ -1,18 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" async />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap"
+      rel="stylesheet"
+      async
+    />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+
     <title>{{ page.title }} - {{ site.title }}</title>
 
     {% seo %}
-</head>
-<body>
+  </head>
+  <body class="text-base bg-midnight text-white">
+    <header class="">
+      <nav class="container flex py-3 items-center justify-between">
+        <div>
+          <a
+            class="p-2 font-bold tracking-wide rounded-md text-white hover:bg-slate-800"
+            href="/"
+            >🕹️ Game On Blog</a
+          >
+        </div>
 
-   
-    {% for link in site.data.navigation %}
-    <a class="text-red-500 px-3" href="{{ link.url }}">{{ link.title }}</a>
-    {% endfor %}
-    
+        <div class="hidden md:flex">
+          {% for link in site.data.navigation %}
+          <a
+            href="{{link.url}}"
+            class="py-2 px-4 rounded-md text-white {% if link.url == page.url %}bg-slate-800{% endif %}"
+          >
+            {{link.title}}</a
+          >
+          {% endfor %}
+        </div>
+
+        <!-- mobile button goes here -->
+        <div class="md:hidden flex items-center">
+          <button
+            class="mobile-menu-button p-1 rounded-md text-white hover:bg-slate-800"
+            aria-label="Mobile Menu Button"
+          >
+            <svg
+              class="w-8 h-8"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </button>
+        </div>
+      </nav>
+
+      <!-- mobile menu -->
+      <div class="mobile-menu hidden md:hidden container pb-4">
+        {% for link in site.data.navigation %}
+        <a
+          href="{{link.url}}"
+          class="block py-3 px-4 font-medium rounded-md transition-all text-white hover:bg-slate-800"
+        >
+          {{link.title}}
+        </a>
+        {% endfor %}
+      </div>
+    </header>
+  </body>
+</html>

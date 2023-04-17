@@ -1,0 +1,37 @@
+{% include header.html %}
+
+        <article class="px-4 md:container py-16">
+
+            <h1 class="text-3xl md:text-4xl tracking-wide font-bold mb-4 text-white">{{ page.title }}</h1>
+        
+            <h2 class="text-xl md:text-2xl tracking-wide font-semibold mb-8">{{ page.subtitle }}</h2>
+        
+            <div class="pb-8">
+                <img class="border-2 border-cyan-500 w-full h-96 object-cover object-center rounded-md" src="{{page.image}}" />
+            </div>
+
+            <div class="pt-2 pb-8">
+                Status: 
+                <span class="px-4 py-2 ml-2 rounded-md font-medium shadow-md  bg-cyan-500 border-2 border-cyan-500"> {{page.status}} </span>
+            </div>
+
+            <div class="pt-2 pb-8"> Tags: 
+                {% for tag in page.tags %}
+                {% assign tag_slug = tag | slugify: "raw" %}
+                <a class="px-4 py-2 ml-2 rounded-md font-medium shadow-md transition-all border-2 border-slate-700 hover:border-cyan-500" href={{ site.baseurl | append: "/tag/" | append: tag_slug | append: "/" }}
+                    rel="category tag"> {{ tag }}</a>
+                {% endfor %}
+            </div>
+
+        
+            <div class="prose prose-lg prose-invert max-w-none mb-8">
+                <div>{{page.date | date: '%B %d, %Y'}}</div>
+            </div>
+
+            <div class="prose prose-lg prose-invert max-w-none hover:prose-a:text-cyan-500 prose-a:transition-all prose-a:underline-offset-2">
+                {{ content }}
+            </div>
+        </article>
+        
+
+{% include footer.html %}
