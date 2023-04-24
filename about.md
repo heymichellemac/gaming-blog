@@ -5,7 +5,7 @@ title: About
 
 A collection of my writing about video games!
 
-Notes taken when playing games, guides used, and reviews of games I love.
+Notes taken when playing games, guides used, and reviews.
 
 ## Links
 
