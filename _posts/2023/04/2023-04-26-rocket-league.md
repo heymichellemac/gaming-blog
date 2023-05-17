@@ -11,7 +11,7 @@ status: [Platinum]
 
 ## Review
 
-Was an enjoyable way to spend some time. 
+Was an enjoyable way to spend some time. A fun game to play for 20 mins or so as it's easy to jump into a quick match or two.  
 
 Got the platinum trophy, still a ton of DLC to go back to eventually but I'm done for now. [Backloggd Review](https://www.backloggd.com/u/MichelleMac/review/777452/){:target="\_blank"}{:rel="noopener noreferrer"}
 

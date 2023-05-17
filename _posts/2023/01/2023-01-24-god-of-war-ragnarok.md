@@ -11,9 +11,11 @@ status: [100%]
 
 ## Review
 
-Phenomenal game in terms of graphics and story. Accessibility options are also very well implemented.
+God of War Ragnarok is a phenomenal game in terms of graphics and story. Accessibility options are also very well implemented.
 
-Post game clean up to get the completion wasn't super fun tho. Things like traversal and lack of fast travel became super tedious. [Backloggd Review](https://www.backloggd.com/u/MichelleMac/review/639381/){:target="\_blank"}{:rel="noopener noreferrer"}
+I really enjoyed all the locations in the game. Each place was so visually interesting and unique that my initial visits were spent stopping to take screenshots every few seconds. 
+
+Post game clean up to get the completion wasn’t super fun. Things like traversal and lack of fast travel became super tedious and areas I previously found fun to traverse became frustrating to return to for the sake of one small collectible. [Backloggd Review](https://www.backloggd.com/u/MichelleMac/review/639381/){:target="\_blank"}{:rel="noopener noreferrer"}
 
 ## Guides I Used
 - [PSN Profiles Trophy Guide](https://psnprofiles.com/guide/15509-god-of-war-ragnar%C3%B6k-trophy-guide){:target="_blank"}{:rel="noopener noreferrer"}
